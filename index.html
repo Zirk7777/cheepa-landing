@@ -26,7 +26,12 @@ body{font-family:'Poppins',system-ui,-apple-system,sans-serif;color:#0D1B35;-web
 .nav-pill{color:#94A3B8;font-size:12px;font-weight:600;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:999px}
 
 /* Hero */
-.hero{background:#0D1B35;padding:64px 24px 56px;text-align:center}
+.hero{background:#0D1B35;padding:56px 24px 56px;text-align:center}
+.hero-logo{display:flex;align-items:center;justify-content:center;gap:2px;margin-bottom:28px}
+.hero-logo svg{width:48px;height:48px}
+.hero-logo-text{font-size:56px;font-weight:800;color:#fff;letter-spacing:-2px;line-height:1}
+.hero-logo-text .blue{color:#1A6BF0}
+.hero-logo-reg{font-size:18px;font-weight:800;color:#1A6BF0;vertical-align:super;margin-left:1px}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.3);color:#6EE7B7;font-size:13px;font-weight:600;padding:6px 16px;border-radius:999px;margin-bottom:24px}
 .hero-badge svg{width:14px;height:14px;fill:currentColor}
 .hero h1{color:#fff;font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.12;letter-spacing:-0.025em;margin-bottom:12px}
@@ -124,8 +129,12 @@ body{font-family:'Poppins',system-ui,-apple-system,sans-serif;color:#0D1B35;-web
 </nav>
 
 <section class="hero">
+  <div class="hero-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#1A6BF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:48px;height:48px;margin-right:-2px"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+    <span class="hero-logo-text">Cheep<span class="blue">a</span><span class="hero-logo-reg">&reg;</span></span>
+  </div>
   <div class="hero-badge">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="width:14px;height:14px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
     Launching in George, Western Cape
   </div>
   <h1>Stop overpaying<br>for <span class="accent">groceries</span></h1>
